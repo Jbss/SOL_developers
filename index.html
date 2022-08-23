@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaveOceanLife</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        .bg-video {
+            position: fixed;
+            top:0px;
+            left:0px;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            background-size: cover;
+        }
+        button {
+            margin: 20px;
+        }
+        .w-btn {
+            position: relative;
+            border:none;
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius:15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s;
+        }
+        .w-btn-outline {
+            position: relative;
+            padding: 15px 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s;
+        }
+        .w-btn:hover {
+            letter-spacing:2px;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .w-btn:active {
+            transform: scale(1.5);
+        }
+        .w-btn-outline:hover {
+            letter-spacing:2px;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .w-btn-main {
+            background: linear-gradient(-45deg, #33ccff 0%, #ff99cc 100%);
+            color: white;
+        }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .w-btn-main {
+            background-size:400% 400%;
+            animation: gradient 5s ease infinite;
+        }
+        * {
+            font-family: 'Jua', sans-serif;
+        }
+        .h1 {
+            display: grid;
+            place-items: center;
+        }
+        h1 {
+            font-size: 40px;
+            background: linear-gradient(45deg, #3d0316,#620c2a,#ff729a,rgb(255, 207, 218));
+            color: transparent;
+            -webkit-background-clip: text;
+            text-align: center;
+        }
+        p {
+            font-size: 200%;
+            background: linear-gradient(45deg, #3b0215,#620c2a,#ff0048,rgb(255, 70, 113),#bf6aff,#aa69ff,#33ccff,rgb(8, 226, 255));
+            color: transparent;
+            -webkit-background-clip: text;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+            <source src="./bgbgvideo.mp4" type="video/mp4" />
+        </video>
+    </div>
+    <button class="w-btn w-btn-main" type="button" onclick="location.href='https://jbss.github.io/SOL/'">
+        메인화면으로
+    </button>
+    <h1>제작자</h1>
+    <p>부산과학고등학교 20기<br><br>강다영<br>김가현<br>장서현</p>
+    
+</body>
+</html>
